@@ -10,14 +10,14 @@ default: &default
 
 development:
   <<: *default
-  database: atelie-manager_development
+  database: atelie_manager_development
 
 test:
   <<: *default
-  database: atelie-manager_test
+  database: atelie_manager_test
 
 production:
   <<: *default
-  database: atelie-manager_production
-  username: atelie-manager
+  database: atelie_manager_production
+  username: atelie_manager
   password: <%= ENV['ATELIE-MANAGER_DATABASE_PASSWORD'] %>
