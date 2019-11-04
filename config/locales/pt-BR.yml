@@ -109,6 +109,8 @@ pt-BR:
       items:
         brands: Marcas
         companies: Fabricantes
+        categories: Categorias
+        products: Produtos
     table_headers:
       model_name: Nome do modelo
       last_created: Última entrada
@@ -127,6 +129,15 @@ pt-BR:
       company:
         one: Fabricante
         other: Fabricantes
+      category:
+        one: Categoria
+        other: Categorias
+      subcategory:
+        one: Subcategoria
+        other: Subcategorias
+      product:
+        one: Produto
+        other: Produtos
     attributes:
       brand:
         short_name: Nome
@@ -135,5 +146,24 @@ pt-BR:
         updated_at: Atualizado em
       company:
         name: Nome
+        created_at: Criado em
+        updated_at: Atualizado em
+      category:
+        name: Nome
+        created_at: Criado em
+        updated_at: Atualizado em
+      subcategory:
+        name: Nome
+        category_id: Categoria
+        created_at: Criado em
+        updated_at: Atualizado em
+      product:
+        name: Nome
+        details: Detalhes
+        description: Descrição
+        size: Tamanho
+        weight: Peso
+        category_id: Categoria
+        brand: Marca
         created_at: Criado em
         updated_at: Atualizado em
