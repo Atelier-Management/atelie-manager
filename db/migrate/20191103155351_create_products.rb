@@ -6,7 +6,7 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.string :size
       t.string :weight
       t.string :description
-      t.references :category, foreign_key: true
+      t.references :subcategory, foreign_key: true
       t.references :brand, foreign_key: true
 
       t.timestamps
