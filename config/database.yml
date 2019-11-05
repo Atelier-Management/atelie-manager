@@ -18,6 +18,3 @@ test:
 
 production:
   <<: *default
-  database: atelie_manager_production
-  username: atelie_manager
-  password: <%= ENV['ATELIE-MANAGER_DATABASE_PASSWORD'] %>
