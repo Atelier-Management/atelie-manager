@@ -10,9 +10,9 @@ Trestle.resource(:products) do
   # Customize the table columns shown on the index view.
   table do
     column :name
+    column :color
     column :description
     column :category
-    column :brand
     actions
   end
 
@@ -21,11 +21,23 @@ Trestle.resource(:products) do
     text_field :name
 
     row do
-      col(xs: 6) { text_field :size }
-      col(xs: 6) { text_field :weight }
+      col(xs: 6) { text_field :size, append: "metros" }
+      col(xs: 6) { text_field :weight, append: "gramas" }
     end
 
-    text_field :description
+    text_area :description
+
+    divider
+    row do
+      col(xs: 3) { text_field :color }
+      col(xs: 3) { text_field :tex }
+      col(xs: 3) { text_field :crochet_needle }
+      col(xs: 3) { text_field :knitting_needle }
+    end
+
+    # row do
+    # end
+
     select :category_id, Category.all
   end
 

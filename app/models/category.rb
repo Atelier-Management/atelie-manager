@@ -1,3 +1,3 @@
 class Category < ApplicationRecord
-  include PgSearch
+  include PgSearch::Model
 end

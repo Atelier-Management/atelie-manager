@@ -164,6 +164,10 @@ pt-BR:
         size: Tamanho
         weight: Peso
         category_id: Categoria
+        color: Cor
+        tex: Textura
+        crochet_needle: Agulha de Crochê
+        knitting_needle: Agulha de Tricô
         brand: Marca
         created_at: Criado em
         updated_at: Atualizado em
